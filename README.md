@@ -37,4 +37,4 @@ Estas informações são salvas utilizando [Sqflite](https://pub.dev/packages/sq
 posteriormente são mostradas na página de listagem CEP onde é possivel ver essas informações e além disso deletar alguma das pesquisas feitas
 
 ## Referências
-(ViaCep)[https://viacep.com.br/]
+[ViaCep](https://viacep.com.br/)
