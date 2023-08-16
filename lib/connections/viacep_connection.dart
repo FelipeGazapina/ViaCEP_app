@@ -7,7 +7,7 @@ class ViaCEPConnection {
   Dio get dio => _dio;
 
   ViaCEPConnection() {
-    _dio.options.baseUrl = "https://viacep.com.br/ws/";
+    _dio.options.baseUrl = "http://viacep.com.br/ws/";
     _dio.interceptors.add(ViaCEPInterceptor());
   }
 }

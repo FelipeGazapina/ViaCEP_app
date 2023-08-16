@@ -26,7 +26,6 @@ class _SearchCEPPageState extends State<SearchCEPPage> {
   handleClick() async {
     try {
       if (repository.database == null) await settingDatabase();
-
       var cep = cepControler.text.replaceAll(RegExp(r'[^\w\s]'), '');
       viaCEPModel = await repository.buscaInfoCEP(cep);
       cepControler.text = "";

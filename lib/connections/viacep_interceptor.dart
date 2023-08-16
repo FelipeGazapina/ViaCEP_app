@@ -4,7 +4,8 @@ class ViaCEPInterceptor extends Interceptor {
   @override
   void onRequest(RequestOptions options, RequestInterceptorHandler handler) {
     options.path = "${options.path}/json";
-    print('REQUEST[${options.method}] => PATH: ${options.path}');
+    print(
+        'REQUEST[${options.method}] => PATH: ${options.path} URL ${options.uri}');
     super.onRequest(options, handler);
   }
 
